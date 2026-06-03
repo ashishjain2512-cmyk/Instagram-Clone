@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +10,417 @@
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-    <footer>
-        <div class="fixed-bottom bg-black">
-           <div class="d-flex justify-content-around align-items-center py-3">
+    <div class="container">
+        <header>
+            <div class="fixed-top" style="background-color:#fafafa;" style="width: 50%; margin-left:25%;">
+                <div class="d-flex justify-content-between align-items-center p-3">
+                    <a href="#" class="bi bi-instagram text-black fs-4"></a>
+                    <h1 class="h5 m-0">Instagram</h1>
+                    <a href="#" class="bi bi-plus-square text-black fs-4"></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="stories">
+                <div class="wrapper d-flex align-items-center p-3">
+                    <div class="story me-3">
+                        <a href="#"><img src="assets/images/story1.jpeg" alt="Story 1"></a>
+                        <p class="text-center m-0">Your Story</p>
+                    </div>
+                    <div class="story me-3">
+                        <a href="#"><img src="assets/images/story2.jpeg" alt="Story 2"></a>
+                        <p class="text-center m-0">Friend 1</p>
+                    </div>
+                    <div class="story me-3">
+                        <a href="#"><img src="assets/images/story3.jpeg" alt="Story 3"></a>
+                        <p class="text-center m-0">Friend 2</p>
+                    </div>
+                    <div class="story me-3">
+                        <a href="#"><img src="assets/images/story4.jpeg" alt="Story 4"></a>
+                        <p class="text-center m-0">Friend 3</p>
+                    </div>
+                    <div class="story me-3">
+                        <a href="#"><img src="assets/images/story5.jpeg" alt="Story 5"></a>
+                        <p class="text-center m-0">Friend 4</p>
+                    </div>
+                    <!-- Add more stories as needed -->
+                </div>
+            </div>
+            <!-- Posts -->
+            <div class="card">
 
-            <a href="#" class="bi bi-house-door-fill text-white fs-4"></a>
-            <a href="#" class="bi bi-search text-white fs-4"></a>
-            <a href="#" class="bi bi-play-btn-fill text-white fs-4"></a>
-            <a href="#" class="bi bi-send text-white fs-4"></a>
-            <a href="#" class="bi bi-person-circle text-white fs-4"></a>
+                <div class="card-header">
+                    <a href="#"><img src="assets/images/dp3.jpeg" alt="Profile Picture" class="rounded-circle me-2"
+                            style="width: 40px; height: 40px;"></a>
+                    <h6 class="mb-0 fw-bold">Friend 1</h6>
 
-           </div>
-        </div>
-    </footer>
+                    <button class="btn btn-primary btn-sm ms-auto">
+                        Follow
+                    </button>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+                </div>
+                <div class="card-image">
+                    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/images/post1.jpeg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/c2.jpeg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/c3.jpeg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
 
-        </body>
+                        <div class="d-flex align-items-center mb-2">
+
+                            <i class="bi bi-heart fs-4 me-3"> 230k</i>
+                            <i class="bi bi-chat fs-4 me-3">5k</i>
+                            <i class="bi bi-send fs-4">2k</i>
+
+                            <i class="bi bi-bookmark fs-4 ms-auto"></i>
+
+                        </div>
+
+                        <p class="mb-1">
+                            Liked by <b>Friend 4</b> and others
+                        </p>
+
+                        <p class="mb-1">
+                            <b>Friend 1</b> Animals are very cute!
+                        </p>
+
+                        <small class="text-muted">
+                            2 hours ago
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 1 end -->
+             <!--1a start-->
+
+                <div class="card">
+
+                    <div class="card-header">
+                        <a href="#"><img src="assets/images/dp3.jpeg" alt="Profile Picture" class="rounded-circle me-2"
+                                style="width: 40px; height: 40px;"></a>
+                        <h6 class="mb-0 fw-bold">Friend 7</h6>
+
+                        <button class="btn btn-primary btn-sm ms-auto">
+                            Follow
+                        </button>
+
+                    </div>
+                    <div class="card-image">
+                        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/f71.jpeg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>First slide label</h5>
+                                        <p>Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/f72.jpeg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/f73.jpeg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Third slide label</h5>
+                                        <p>Some representative placeholder content for the third slide.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+
+                            <div class="d-flex align-items-center mb-2">
+
+                                <i class="bi bi-heart fs-4 me-3"> 230k</i>
+                                <i class="bi bi-chat fs-4 me-3">5k</i>
+                                <i class="bi bi-send fs-4">2k</i>
+
+                                <i class="bi bi-bookmark fs-4 ms-auto"></i>
+
+                            </div>
+
+                            <p class="mb-1">
+                                Liked by <b>Friend 4</b> and others
+                            </p>
+
+                            <p class="mb-1">
+                                <b>Friend 7</b> Nature is beautiful!
+                            </p>
+
+                            <small class="text-muted">
+                                2 hours ago
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1 end -->
+                 <!--2 start-->
+                <div class="card">
+
+                    <div class="card-header">
+                        <a href="#"><img src="assets/images/dp2.jpeg" alt="Profile Picture" class="rounded-circle me-2"
+                                style="width: 40px; height: 40px;"></a>
+                        <h6 class="mb-0 fw-bold">Friend 2</h6>
+
+                        <button class="btn btn-primary btn-sm ms-auto">
+                            Follow
+                        </button>
+
+                    </div>
+                    <div class="card-image">
+                        <a href="#"><img src="assets/images/post2.jpeg" class="card-img-top" alt="..."></a>
+                    </div>
+                    <div class="card-body">
+
+                        <div class="d-flex align-items-center mb-2">
+
+                            <i class="bi bi-heart fs-4 me-3"> 230k</i>
+                            <i class="bi bi-chat fs-4 me-3">5k</i>
+                            <i class="bi bi-send fs-4">2k</i>
+
+                            <i class="bi bi-bookmark fs-4 ms-auto"></i>
+
+                        </div>
+
+                        <p class="mb-1">
+                            Liked by <b>Friend 4</b> and others
+                        </p>
+
+                        <p class="mb-1">
+                            <b>Friend 2</b> horse is 2nd very fast animal in the world!
+                        </p>
+
+                        <small class="text-muted">
+                            2 hours ago
+                        </small>
+
+                    </div>
+                </div>
+        
+            <!--2 end-->
+
+            <!--3 start-->
+            <div class="card">
+
+                <!-- Header -->
+                <div class="card-header">
+                    <img src="assets/images/dp1.jpeg" class="rounded-circle me-2" width="40" height="40">
+
+                    <h6 class="mb-0 fw-bold">Friend 3</h6>
+
+                    <button class="btn btn-primary btn-sm ms-auto">
+                        Follow
+                    </button>
+                </div>
+
+                <!-- Image -->
+                <div class="card-image">
+                    <img src="assets/images/p4.jpeg" class="card-img-top post-img" alt="">
+                </div>
+
+                <!-- Body -->
+                <div class="card-body">
+
+                    <div class="d-flex align-items-center mb-2">
+
+                        <i class="bi bi-heart fs-4 me-3"> 230k</i>
+                        <i class="bi bi-chat fs-4 me-3">5k</i>
+                        <i class="bi bi-send fs-4">2k</i>
+
+                        <i class="bi bi-bookmark fs-4 ms-auto"></i>
+
+                    </div>
+
+                    <p class="mb-1">
+                        Liked by <b>Friend 4</b> and others
+                    </p>
+
+                    <p class="mb-1">
+                        <b>Friend 3</b> lions are majestic!
+                    </p>
+
+                    <small class="text-muted">
+                        2 hours ago
+                    </small>
+
+                </div>
+
+            </div>
+            <!--3 end-->
+
+            <!--4 start-->
+            <div class="card">
+
+                <div class="card-header">
+                    <a href="#"><img src="assets/images/dp4.jpeg" alt="Profile Picture" class="rounded-circle me-2"
+                            style="width: 40px; height: 40px;"></a>
+                    <h6 class="mb-0 fw-bold">Friend 4</h6>
+
+                    <button class="btn btn-primary btn-sm ms-auto">
+                        Follow
+                    </button>
+
+                </div>
+                <div class="card-image">
+                    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/images/c4.jpeg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/c5.jpeg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/c6.jpeg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        <div class="card-body">
+
+                            <div class="d-flex align-items-center mb-2">
+
+                                <i class="bi bi-heart fs-4 me-3"> 230k</i>
+                                <i class="bi bi-chat fs-4 me-3">5k</i>
+                                <i class="bi bi-send fs-4">2k</i>
+
+                                <i class="bi bi-bookmark fs-4 ms-auto"></i>
+
+                            </div>
+
+                            <p class="mb-1">
+                                Liked by <b>Friend 1</b> and others
+                            </p>
+
+                            <p class="mb-1">
+                                <b>Friend 4</b> cricket is fun!
+                            </p>
+
+                            <small class="text-muted">
+                                2 hours ago
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- 4 end -->
+        </main>
+        <footer>
+            <div class="fixed-bottom " style="background-color:#fafafa;">
+                <div class="d-flex justify-content-around align-items-center p-3">
+                    <a href="#" class="bi bi-house-door-fill text-black fs-4"></a>
+                    <a href="#" class="bi bi-search text-black fs-4"></a>
+                    <a href="#" class="bi bi-play-btn-fill text-black fs-4"></a>
+                    <a href="#" class="bi bi-send text-black fs-4"></a>
+                    <a href="#" class="bi bi-person-circle text-black fs-4"></a>
+
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+</body>
+
 </html>

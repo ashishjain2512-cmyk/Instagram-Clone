@@ -79,3 +79,14 @@ body{
 .card-body i:hover{
     opacity:.7;
 }
+.btn{
+    padding:5px 10px;
+    border:none;
+    background-color:#1d6fc1;
+    color:white;
+    border-radius:4px;
+    cursor:pointer;
+}
+.btn:hover{
+    background-color: #034183;
+}
